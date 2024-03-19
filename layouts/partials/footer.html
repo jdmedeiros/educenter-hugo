@@ -80,9 +80,6 @@
   <!-- copyright -->
   <div class="copyright py-4 bg-footer">
     <div class="container">
-      <div class="row d-flex align-items-center"> <!-- Use 'd-flex' to make the row a flex container and include 'align-items-center' within the class attribute -->
-        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image" class="mx-auto"> <!-- 'mx-auto' to center the image horizontally -->
-      </div>
       <div class="row">
         <div class="col-md-7 text-md-left text-center">
           <p class="mb-3 mb-md-0">{{ site.Params.copyright | markdownify }}</p>
@@ -94,6 +91,9 @@
             {{ end }}
           </ul>
         </div>
+      </div>
+      <div class="row d-flex align-items-center"> <!-- Use 'd-flex' to make the row a flex container and include 'align-items-center' within the class attribute -->
+        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image" class="mx-auto"> <!-- 'mx-auto' to center the image horizontally -->
       </div>
     </div>
   </div>
