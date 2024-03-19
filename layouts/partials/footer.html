@@ -27,9 +27,6 @@
   <div class="footer bg-footer section border-bottom">
     <div class="container">
       <div class="row">
-        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image">
-      </div>
-      <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
           <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
@@ -77,6 +74,9 @@
             {{ end }}
           </ul>
         </div>
+      </div>
+      <div class="row">
+        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image">
       </div>
     </div>
   </div>
