@@ -75,14 +75,14 @@
           </ul>
         </div>
       </div>
-      <div class="row">
-        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image">
-      </div>
     </div>
   </div>
   <!-- copyright -->
   <div class="copyright py-4 bg-footer">
     <div class="container">
+      <div class="row">
+        <img src="{{ .Site.Params.footerImage | absURL }}" alt="Footer Image">
+      </div>
       <div class="row">
         <div class="col-md-7 text-md-left text-center">
           <p class="mb-3 mb-md-0">{{ site.Params.copyright | markdownify }}</p>
